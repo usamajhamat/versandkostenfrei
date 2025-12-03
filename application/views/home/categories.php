@@ -301,7 +301,7 @@
                                 <font style="vertical-align: inherit;">
                                     <font style="vertical-align: inherit;">Ja, </font>
                                 </font>
-                                <a href="<?php echo base_url().'home/privacy_policy' ?>">
+                                <a href="<?php echo base_url().'datenschutz' ?>">
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">ich stimme</font>
                                     </font>
@@ -365,7 +365,7 @@
                                   <h6 class="fw-bold mb-2" style="text-shadow:0 1px 3px rgba(0,0,0,0.4);">
                                     <?php echo $cat_name ?>
                                   </h6>
-                                  <a href="<?php echo base_url().'home/categories/'.$cat_id ?>" 
+                                  <a href="<?php echo base_url().'kategorien/'.$cat_id ?>" 
                                      class="btn fw-semibold text-white" 
                                      style="border-radius:25px; background:#5c8374; border:none; padding:6px 20px; font-size:0.9rem;">
                                     Alle Anzeigen 
@@ -828,36 +828,36 @@
 													<ul class="pagination">
 														<?php if($count_coupons <= $page_limit_initial){ ?>
 														   <li class="" >
-															<a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li> 
+															<a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li> 
 														<?php } else { ?>
 														<?php $pages = ceil($count_coupons/$page_limit_initial); ?>
 														<?php $pages_limit = $total_page_limit_initial; ?>
 														<?php if(!empty($page) && $page_num > 1){ ?>
-														<li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
+														<li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
 														<?php } ?>
 														<?php for($i = 1; $i<=$pages; $i++){ ?>
 															<?php if($page_num >= $pages_limit){ ?>
 																<?php if($i >= $pages_limit){ ?>
 																	<?php $pages_limit = $pages_limit + $total_page_limit_initial; ?>
 																	<?php if($i >= $page_num){ ?>
-																		<li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+																		<li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
 																	<?php } ?>
 																<?php } ?>
 															<?php } else { ?>
 																<?php if($i <= $pages_limit){ ?>
 																	<?php if(empty($page_num) && $i == 1){ ?>
 																		<li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-																		<a class="cs-pagination-item" href="<?php echo base_url();?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
+																		<a class="cs-pagination-item" href="<?php echo base_url();?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
 																	<?php } else { ?>
 																		<li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-																		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+																		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
 																	<?php } ?>
 																<?php } ?>
 															<?php } ?>
 														<?php } ?>
 														<?php if(!empty($page) && $pages<$page_num){ ?>
 														<li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-														<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+														<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
 														<?php } else if($pages != $page_num){ ?>
 														
 														<!-- <li>
@@ -867,10 +867,10 @@
 																</font>
 															</span>
 														</li>
-														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
-														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
+														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
+														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
 														<li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-															<a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+															<a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Coupon&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
 														<?php } ?>
 													<?php } ?>
 												</ul>											
@@ -1063,36 +1063,36 @@
                                                     <ul class="pagination">
                                                         <?php if($total_offers <= $page_limit_initial){ ?>
                                                          <li class="" >
-                                                            <a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li>
+                                                            <a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li>
                                                         <?php } else { ?>
                                                         <?php $pages = ceil($total_offers/$page_limit_initial); ?>
                                                         <?php $pages_limit = $total_page_limit_initial; ?>
                                                         <?php if(!empty($page) && $page_num > 1){ ?>
-                                                        <li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
+                                                        <li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
                                                         <?php } ?>
                                                         <?php for($i = 1; $i<=$pages; $i++){ ?>
                                                             <?php if($page_num >= $pages_limit){ ?>
                                                                 <?php if($i >= $pages_limit){ ?>
                                                                     <?php $pages_limit = $pages_limit + $total_page_limit_initial; ?>
                                                                     <?php if($i >= $page_num){ ?>
-                                                                        <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+                                                                        <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
                                                                     <?php } ?>
                                                                 <?php } ?>
                                                             <?php } else { ?>
                                                                 <?php if($i <= $pages_limit){ ?>
                                                                     <?php if(empty($page_num) && $i == 1){ ?>
                                                                         <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                                        <a class="cs-pagination-item" href="<?php echo base_url();?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
+                                                                        <a class="cs-pagination-item" href="<?php echo base_url();?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
                                                                     <?php } else { ?>
                                                                         <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                                        <a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+                                                                        <a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
                                                                     <?php } ?>
                                                                 <?php } ?>
                                                             <?php } ?>
                                                         <?php } ?>
                                                         <?php if(!empty($page) && $pages<$page_num){ ?>
                                                         <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                        <a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+                                                        <a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
                                                         <?php } else if($pages != $page_num){ ?>
                                                         
                                                         <!-- <li>
@@ -1102,10 +1102,10 @@
                                                                 </font>
                                                             </span>
                                                         </li>
-                                                        <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
-                                                        <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
+                                                        <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
+                                                        <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
                                                         <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                            <a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+                                                            <a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
                                                         <?php } ?>
                                                     <?php } ?>
                                                 </ul>											
@@ -1293,36 +1293,36 @@
 													<ul class="pagination">
 														<?php if($total_deals <= $page_limit_initial){ ?>
 														   <li class="" >
-															<a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li> 
+															<a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li> 
 														<?php } else { ?>
 														<?php $pages = ceil($total_deals/$page_limit_initial); ?>
 														<?php $pages_limit = $total_page_limit_initial; ?>
 														<?php if(!empty($page) && $page_num > 1){ ?>
-														<li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
+														<li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
 														<?php } ?>
 														<?php for($i = 1; $i<=$pages; $i++){ ?>
 															<?php if($page_num >= $pages_limit){ ?>
 																<?php if($i >= $pages_limit){ ?>
 																	<?php $pages_limit = $pages_limit + $total_page_limit_initial; ?>
 																	<?php if($i >= $page_num){ ?>
-																		<li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+																		<li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
 																	<?php } ?>
 																<?php } ?>
 															<?php } else { ?>
 																<?php if($i <= $pages_limit){ ?>
 																	<?php if(empty($page_num) && $i == 1){ ?>
 																		<li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-																		<a class="cs-pagination-item" href="<?php echo base_url();?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
+																		<a class="cs-pagination-item" href="<?php echo base_url();?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
 																	<?php } else { ?>
 																		<li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-																		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+																		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
 																	<?php } ?>
 																<?php } ?>
 															<?php } ?>
 														<?php } ?>
 														<?php if(!empty($page) && $pages<$page_num){ ?>
 														<li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-														<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+														<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
 														<?php } else if($pages != $page_num){ ?>
 														
 														<!-- <li>
@@ -1332,10 +1332,10 @@
 																</font>
 															</span>
 														</li>
-														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
-														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
+														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
+														<li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
 														<li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-															<a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Deals/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+															<a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Deals/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
 														<?php } ?>
 													<?php } ?>
 												</ul>											
@@ -1522,36 +1522,36 @@
                                             <ul class="pagination">
                                                 <?php if($total_shipping <= $page_limit_initial){ ?>
                                                    <li class="" >
-                                                    <a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li>
+                                                    <a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>?type=Offer&name=page&page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li>
                                                 <?php } else { ?>
                                                 <?php $pages = ceil($total_shipping/$page_limit_initial); ?>
                                                 <?php $pages_limit = $total_page_limit_initial; ?>
                                                 <?php if(!empty($page) && $page_num > 1){ ?>
-                                                <li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
+                                                <li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
                                                 <?php } ?>
                                                 <?php for($i = 1; $i<=$pages; $i++){ ?>
                                                     <?php if($page_num >= $pages_limit){ ?>
                                                         <?php if($i >= $pages_limit){ ?>
                                                             <?php $pages_limit = $pages_limit + $total_page_limit_initial; ?>
                                                             <?php if($i >= $page_num){ ?>
-                                                                <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+                                                                <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
                                                             <?php } ?>
                                                         <?php } ?>
                                                     <?php } else { ?>
                                                         <?php if($i <= $pages_limit){ ?>
                                                             <?php if(empty($page_num) && $i == 1){ ?>
                                                                 <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                                <a class="cs-pagination-item" href="<?php echo base_url();?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
+                                                                <a class="cs-pagination-item" href="<?php echo base_url();?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
                                                             <?php } else { ?>
                                                                 <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+                                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
                                                             <?php } ?>
                                                         <?php } ?>
                                                     <?php } ?>
                                                 <?php } ?>
                                                 <?php if(!empty($page) && $pages<$page_num){ ?>
                                                 <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
                                                 <?php } else if($pages != $page_num){ ?>
                                                 
                                                 <!-- <li>
@@ -1561,10 +1561,10 @@
                                                         </font>
                                                     </span>
                                                 </li>
-                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
-                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
+                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
+                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
                                                 <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                    <a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+                                                    <a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Shipping/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
                                                 <?php } ?>
                                             <?php } ?>
                                         </ul>											
@@ -1755,36 +1755,36 @@
                                             <ul class="pagination">
                                                 <?php if($total_items <= $page_limit_initial){ ?>
                                                    <li class="" >
-                                                    <a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li>
+                                                    <a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num; ?>"><?php echo $page_num; ?></a></li>
                                                 <?php } else { ?>
                                                 <?php $pages = ceil($total_items/$page_limit_initial); ?>
                                                 <?php $pages_limit = $total_page_limit_initial; ?>
                                                 <?php if(!empty($page) && $page_num > 1){ ?>
-                                                <li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
+                                                <li class="" ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num - 1; ?>">&laquo;</a></li>
                                                 <?php } ?>
                                                 <?php for($i = 1; $i<=$pages; $i++){ ?>
                                                     <?php if($page_num >= $pages_limit){ ?>
                                                         <?php if($i >= $pages_limit){ ?>
                                                             <?php $pages_limit = $pages_limit + $total_page_limit_initial; ?>
                                                             <?php if($i >= $page_num){ ?>
-                                                                <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+                                                                <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >		<a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
                                                             <?php } ?>
                                                         <?php } ?>
                                                     <?php } else { ?>
                                                         <?php if($i <= $pages_limit){ ?>
                                                             <?php if(empty($page_num) && $i == 1){ ?>
                                                                 <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                                <a class="cs-pagination-item" href="<?php echo base_url();?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
+                                                                <a class="cs-pagination-item" href="<?php echo base_url();?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $i; ?>" class="active"><?php echo $i; ?></a></li>
                                                             <?php } else { ?>
                                                                 <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
+                                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $i; ?>" class=" <?php if($i == $page_num){ ?> active <?php } ?>"><?php echo $i; ?></a></li>
                                                             <?php } ?>
                                                         <?php } ?>
                                                     <?php } ?>
                                                 <?php } ?>
                                                 <?php if(!empty($page) && $pages<$page_num){ ?>
                                                 <li class="<?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+                                                <a class="cs-pagination-item" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
                                                 <?php } else if($pages != $page_num){ ?>
                                                 
                                                 <!-- <li>
@@ -1794,10 +1794,10 @@
                                                         </font>
                                                     </span>
                                                 </li>
-                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
-                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
+                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $pages-1; ?>"><?php echo $pages-1;?></a></li>
+                                                <li ><a class="cs-pagination-item" rel="next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $pages; ?>"><?php echo $pages;?></a></li> -->
                                                 <li class=" <?php if($i == $page_num) { echo 'cs-pagination-item-active'; }?>" >
-                                                    <a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>home/categories/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
+                                                    <a class="cs-pagination-item cs-pagination-next" href="<?php echo base_url(); ?>kategorien/<?php echo $categories_id;?>/Free%20Items/page?page=<?php echo $page_num = $page_num + 1; ?>">&raquo;</a></li>
                                                 <?php } ?>
                                             <?php } ?>
                                         </ul>											
@@ -1967,7 +1967,7 @@
                                             <font style="vertical-align: inherit;">
 																<font style="vertical-align: inherit">Ja, </font>
 															</font>
-															<a href="<?php echo base_url().'home/privacy_policy' ?>">
+															<a href="<?php echo base_url().'datenschutz' ?>">
 																<font style="vertical-align: inherit;">
 																	<font style="vertical-align: inherit;">ich stimme </font>
 																</font>

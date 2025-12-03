@@ -116,10 +116,10 @@
         </tr>
         <tr>
             <td style="font-size: 11px;">
-                <a href="<?php echo base_url()."home/coupons/popular";?>" class="button1">Weitere Beliebte Gutscheine</a>
+                <a href="<?php echo base_url()."neueste-Rabattcodes";?>" class="button1">Weitere Beliebte Gutscheine</a>
                 <a href="<?php echo base_url().'home/coupons/latest/';?>" class="button1">Aktuelle gutscheine</a>
                 <a href="<?php echo base_url().'home/coupons/trending';?>" class="button1">Trendige gutscheine</a>
-                <a href="<?php echo base_url()."home/categories"?>" class="button1">Kategorien</a>
+                <a href="<?php echo base_url()."kategorien"?>" class="button1">Kategorien</a>
             </td>
         </tr>
 
@@ -290,7 +290,7 @@
             <div style="padding:2px;line-height: 1.6;">
 			  <p>Copyright&#169;<?php echo date('Y')?> <a href="<?php echo base_url();?>">VOUCHERR.DE</a> - Alle Rechte vorbehalten.</p>
               <p>E-Mail:<a href="mailto:voucherr@gmail.com">voucherr@gmail.com</a></p>
-              <p>Vollständiges <a href="<?php echo base_url().'home/imprints';?>">Impressum </a> und Informationen zum  <a href="<?php echo base_url();?>home/privacy_policy">Datenschutz</a></p>
+              <p>Vollständiges <a href="<?php echo base_url().'Impressum';?>">Impressum </a> und Informationen zum  <a href="<?php echo base_url();?>datenschutz">Datenschutz</a></p>
               <p>Wenn Sie keine aktuellen Gutscheine mehr erhalten möchten,<a href="<?php echo base_url().'home/?unsub='.$subscribr_id;?>" target="_blank">klicken Sie hier,</a> to um den Newsletter abzubestellen</p>
 			</div>
            </div>

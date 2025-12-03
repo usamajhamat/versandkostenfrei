@@ -359,7 +359,7 @@
                                         $get_cate_total_vouchers = $this->db->query("SELECT * FROM `coupons` WHERE `categories_id` = '$category_id' AND `status` = 'Active' AND (end_date >= '".$date."' OR end_date = '0000-00-00')")->num_rows();
                                 ?>
                                 <li class="nav_list_item_menu">
-                                    <a class="nav_link_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>">
+                                    <a class="nav_link_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>">
                                         <div>
                                         <img style="filter: invert(6.5);" class="cate_image" src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
                                         <font style="vertical-align: inherit;">
@@ -372,7 +372,7 @@
                                 </li>
                                 <?php } ?>
                                 <li class="nav_list_item_menu">
-                                    <a class="nav_link_item" href="<?php echo base_url().'home/categories'?>" title="Alle Kategorien">
+                                    <a class="nav_link_item" href="<?php echo base_url().'kategorien'?>" title="Alle Kategorien">
                                         <div>
                                         <i class="" aria-hidden="true"></i>
                                         <font style="vertical-align: inherit;">
@@ -401,7 +401,7 @@
                                         $get_cate_total_vouchers = $this->db->get_where('coupons', array('categories_id'=>$category_id, 'status'=>'Active'))->num_rows();
                                 ?>
                                 <li class="border-r">
-                                    <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>">
+                                    <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>">
                                         <img style="filter: invert(6.5);" class="cate_image" src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;"><?php echo $category_name.' ('.$get_cate_total_vouchers.' Gutscheine)'?></font>
@@ -412,7 +412,7 @@
                                 </li>
                                 <?php } ?>
                                 <li class="border-r">
-                                    <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories'?>" title="Alle Kategorien">
+                                    <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien'?>" title="Alle Kategorien">
                                         <i class="" aria-hidden="true"></i>
                                         <font style="vertical-align: inherit;">
                                             <font style="vertical-align: inherit;">Alle Kategorien</font>
@@ -425,7 +425,7 @@
                         <li style="">
                             <div class="nav_inner_boxes_mbl" title="Verkaufswerbung">
                                 <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;color:black"><a class="" style="color:white;text-decoration: none;" href="<?php echo base_url();?>home/categories/13">Verkaufswerbung</a></font>
+                                    <font style="vertical-align: inherit;color:black"><a class="" style="color:white;text-decoration: none;" href="<?php echo base_url();?>kategorien/13">Verkaufswerbung</a></font>
                                 </font>
                             </div>
                         </li>
@@ -822,7 +822,7 @@
 									            $get_cate_total_vouchers = $this->db->query("SELECT * FROM `coupons` WHERE `categories_id` = '$category_id' AND `status` = 'Active' AND (end_date >= '".$date."' OR end_date = '0000-00-00')")->num_rows();
                                        ?>
                                         <li class="nav_list_item_kate">
-                                            <a class="nav_link_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>">
+                                            <a class="nav_link_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>">
                                                 <div>
                                                 <img style="filter: invert(6.5);" class="cate_image" src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
                                                 <font style="vertical-align: inherit;">
@@ -835,7 +835,7 @@
                                         </li>
                                         <?php } ?>
                                         <li class="nav_list_item_kate">
-                                            <a class="nav_link_item" href="<?php echo base_url().'home/categories'?>" title="Alle Kategorien">
+                                            <a class="nav_link_item" href="<?php echo base_url().'kategorien'?>" title="Alle Kategorien">
                                                 <div>
                                                 <i class="" aria-hidden="true"></i>
                                                 <font style="vertical-align: inherit;">
@@ -864,7 +864,7 @@
 												$get_cate_total_vouchers = $this->db->get_where('coupons', array('categories_id'=>$category_id, 'status'=>'Active'))->num_rows();
 										?>
                                         <li class="border-r">
-                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>">
+                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>">
                                                 <img style="filter: invert(6.5);" class="cate_image" src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
                                                 <font style="vertical-align: inherit;">
                                                     <font style="vertical-align: inherit;"><?php echo $category_name.' ('.$get_cate_total_vouchers.' Gutscheine)'?></font>
@@ -875,7 +875,7 @@
                                         </li>
                                         <?php } ?>
                                         <li class="border-r">
-                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories'?>" title="Alle Kategorien">
+                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien'?>" title="Alle Kategorien">
                                                 <i class="" aria-hidden="true"></i>
                                                 <font style="vertical-align: inherit;">
                                                     <font style="vertical-align: inherit;">Alle Kategorien</font>
@@ -888,7 +888,7 @@
                                 <li style="">
                                     <div class="nav_inner_boxes" title="Verkaufswerbung">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;"><a class="" style="text-decoration: none;color:black" href="<?php echo base_url();?>home/categories/13">Verkaufswerbung</a></font>
+                                            <font style="vertical-align: inherit;"><a class="" style="text-decoration: none;color:black" href="<?php echo base_url();?>kategorien/13">Verkaufswerbung</a></font>
                                         </font>
                                     </div>
                                 </li>
@@ -1403,7 +1403,7 @@
 												
 										?>
 												<li>
-													<a class="cs-main-nav-link" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>" >
+													<a class="cs-main-nav-link" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>" >
 														<i class="fa fa-shopping-bag"></i>
 														<font style="vertical-align: inherit;">
 															<font style="vertical-align: inherit;"><?php echo $category_name; ?></font>
@@ -1428,7 +1428,7 @@
 												$get_cate_total_vouchers = $this->db->get_where('coupons', array('categories_id'=>$category_id, 'status'=>'Active','end_date >'=>$date))->num_rows();
 										?>
                                         <li class="border-r">
-                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>">
+                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>">
                                                 <img style="filter: invert(6.5);" class="cate_image" src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
                                                 <font style="vertical-align: inherit;">
                                                     <font style="vertical-align: inherit;"><?php echo $category_name.' ('.$get_cate_total_vouchers.' voucherss)'?></font>
@@ -1439,7 +1439,7 @@
                                         </li>
                                         <?php } ?>
                                         <li class="border-r">
-                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories'?>" title="All Kategorien ">
+                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien'?>" title="All Kategorien ">
                                                 <i class="" aria-hidden="true"></i>
                                                 <font style="vertical-align: inherit;">
                                                     <font style="vertical-align: inherit;">Alle Kategorien </font>
@@ -1466,7 +1466,7 @@
 												$get_cate_total_vouchers = $this->db->get_where('coupons', array('categories_id'=>$category_id, 'status'=>'Active'))->num_rows();
 										?>
                                         <li class="border-r">
-                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>">
+                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>">
                                                 <img style="filter: invert(6.5);" class="cate_image" src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
                                                 <font style="vertical-align: inherit;">
                                                     <font style="vertical-align: inherit;"><?php echo $category_name.' ('.$get_cate_total_vouchers.' Gutscheine)'?></font>
@@ -1477,7 +1477,7 @@
                                         </li>
                                         <?php } ?>
                                         <li class="border-r">
-                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories'?>" title="All categories">
+                                            <a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien'?>" title="All categories">
                                                 <i class="" aria-hidden="true"></i>
                                                 <font style="vertical-align: inherit;">
                                                     <font style="vertical-align: inherit;">Alle Kategorien</font>
@@ -1490,7 +1490,7 @@
                                 <li class="dropdown cs-navi-item cs-main-nav-c4u" class="border-r" style="border-right:1px solid #e2e2e2 !important">
                                     <div class="cs-main-nav-item" title="Verkaufswerbung">
                                         <font style="vertical-align: inherit;">
-                                            <font style="vertical-align: inherit;"><a class="" style="color: white;text-decoration: none;" href="<?php echo base_url();?>home/categories/11">Verkaufswerbung</a></font>
+                                            <font style="vertical-align: inherit;"><a class="" style="color: white;text-decoration: none;" href="<?php echo base_url();?>kategorien/11">Verkaufswerbung</a></font>
                                         </font>
                                         <!--<img src="<?php echo base_url('uploads/static_content/arrow-2.png');?>" class="menu_arrow">-->
                                     </div>
@@ -1505,7 +1505,7 @@
 												
 										?>
 												<li>
-													<a class="cs-main-nav-link" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>" >
+													<a class="cs-main-nav-link" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>" >
 														<i class="fa fa-shopping-bag"></i>
 														<font style="vertical-align: inherit;">
 															<font style="vertical-align: inherit;"><?php echo $category_name; ?></font>
@@ -1527,7 +1527,7 @@
 												$get_cate_total_vouchers = $this->db->get_where('coupons', array('categories_id'=>$category_id, 'status'=>'Active'))->num_rows();
 										?>
 												<li>
-													<a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>" > 
+													<a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>" > 
 													    <img style="filter: invert(6.5);" class="cate_image"  src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
 														<font style="vertical-align: inherit;">
 															<font style="vertical-align: inherit;"><?php echo $category_name.' ('.$get_cate_total_vouchers.' Gutscheine)'?></font>
@@ -1538,7 +1538,7 @@
 												</li>
 										<?php } ?>
 										<li>
-											<a class="cs-main-nav-link cate_item" href="<?php echo base_url().'home/categories'?>" title="All categories" >
+											<a class="cs-main-nav-link cate_item" href="<?php echo base_url().'kategorien'?>" title="All categories" >
 												<i class="" aria-hidden="true"></i>
 												<font style="vertical-align: inherit;">
 													<font style="vertical-align: inherit;">All categories</font>

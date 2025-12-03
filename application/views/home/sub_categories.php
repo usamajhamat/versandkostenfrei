@@ -1604,7 +1604,7 @@
                                             <font style="vertical-align: inherit;">
 																<font style="vertical-align: inherit">Ja, </font>
 															</font>
-															<a href="<?php echo base_url().'home/privacy_policy' ?>">
+															<a href="<?php echo base_url().'datenschutz' ?>">
 																<font style="vertical-align: inherit;">
 																	<font style="vertical-align: inherit;">ich stimme </font>
 																</font>

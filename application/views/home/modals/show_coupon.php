@@ -220,7 +220,7 @@
 	  var coupon_type = $(this).attr('data-coupon');
 	  var tag = $(this).attr('data-tag');
 	  if(page_type=="category"){
-	    window.open("<?php echo base_url();?>home/categories/"+cateID_id+"?coupon_id="+coupon_id, "_blank");
+	    window.open("<?php echo base_url();?>kategorien/"+cateID_id+"?coupon_id="+coupon_id, "_blank");
 	  }
 	  else if(page_type=="brands"){
 		window.open("<?php echo base_url();?>home/brands/"+brand_id+'/'+coupon_type+"?coupon_id="+coupon_id, "_blank");  

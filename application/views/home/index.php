@@ -234,7 +234,7 @@
          }
          else if($page_name=="categories"){
          if(!empty($param1)){
-         $canonical =  $canonical."home/categories/".$param1;
+         $canonical =  $canonical."kategorien/".$param1;
          $brnads_eoData     = $this->db->get_where('categories',array('categories_id'=>$param1))->row();
          $title       = $brnads_eoData->seo_title;
          $description = $brnads_eoData->seo_description;
@@ -244,7 +244,7 @@
       <?php
          }
          else{
-         $canonical =  $canonical."home/categories";
+         $canonical =  $canonical."kategorien";
          $brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'Main_categories'))->row();
          $title       = $brnads_eoData->title;
          $description = $brnads_eoData->description;
@@ -273,7 +273,7 @@
          }
          
          else if($page_name=="faqs"){
-         $canonical =  $canonical."home/faqs/users";
+         $canonical =  $canonical."faq";
          $brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'faqs'))->row();
          $title       = $brnads_eoData->title;
          $description = $brnads_eoData->description;
@@ -303,7 +303,7 @@
       <?php
          }
          else if($page_name=="privacy_policy"){
-            $canonical =  $canonical."home/privacy_policy";
+            $canonical =  $canonical."datenschutz";
          	$brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'privacy_plolicy'))->row();
          	$title       = $brnads_eoData->title;
          	$description = $brnads_eoData->description;
@@ -313,7 +313,7 @@
       <?php
          }
          else if($page_name=="imprints"){
-            $canonical =  $canonical."home/imprints";
+            $canonical =  $canonical."Impressum";
          	$brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'imprints'))->row();
          	$title       = $brnads_eoData->title;
          	$description = $brnads_eoData->description;
@@ -323,7 +323,7 @@
       <?php
          }
          else if($page_name=="contact_us"){
-            $canonical =  $canonical."home/contact_us";
+            $canonical =  $canonical."kontakt";
          	$brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'contact_us'))->row();
          	$title       = $brnads_eoData->title;
          	$description = $brnads_eoData->description;
@@ -334,7 +334,7 @@
          }
          else if($page_name=="voucher_blog_info"){
             
-            $canonical =  $canonical."home/blog_info";
+            $canonical =  $canonical."blogs";
          	$brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'info_blog'))->row();
          	$title       = $brnads_eoData->title;
          	$description = $brnads_eoData->description;
@@ -344,7 +344,7 @@
       <?php
          }
          else if($page_name=="coupons"){
-            $canonical =  $canonical."home/coupons/popular";
+            $canonical =  $canonical."neueste-Rabattcodes";
          	$brnads_eoData     = $this->db->get_where('seo_setting',array('page_name'=>'popular_coupons'))->row();
          	$title       = $brnads_eoData->title;
          	$description = $brnads_eoData->description;

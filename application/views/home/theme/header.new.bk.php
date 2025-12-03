@@ -102,7 +102,7 @@
                           </ul>
                         </li>
                         <li class="nav-item">
-                          <a href="<?php base_url() ?>home/categories/" class="text-white nav-link pl-1 pl-md-3">Alle Kategorien</a>
+                          <a href="<?php base_url() ?>kategorien/" class="text-white nav-link pl-1 pl-md-3">Alle Kategorien</a>
                         </li>
                     </ul>
                      <span>
@@ -200,7 +200,7 @@
       ?>
         <div class="pr-2 d-inline-block">
           <div class="categories">
-            <a href="<?php echo base_url().'home/categories/'.$category_id ?>" title="<?php echo $category_name; ?>" class="p-0">
+            <a href="<?php echo base_url().'kategorien/'.$category_id ?>" title="<?php echo $category_name; ?>" class="p-0">
               <div class="img-overlay"></div>
               <img src="<?php echo base_url().$cat_img_url.$cat_image; ?>" data-src="<?php echo base_url().$cat_img_url.$cat_image; ?>" height="110px" width="200px"/>
               <span class="title text-white"><?php echo $category_name ?></span>

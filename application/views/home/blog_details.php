@@ -344,7 +344,7 @@
                     </a>
                 </div>
 
-                <a href="<?php echo base_url('home/blog_info'); ?>" class="back_btn">
+                <a href="<?php echo base_url('blogs'); ?>" class="back_btn">
                     <i class="fas fa-arrow-left"></i>
                     Zurück zur Übersicht
                 </a>

@@ -37,8 +37,8 @@
           <h5 style="color:white">Sonderseiten</h5>
         <ul>
           <li><a href="<?php echo base_url().'marken'; ?>">Geschäfte von A-Z</a></li>
-          <li><a href="<?php echo base_url().'home/categories/'; ?>">Kategorien von A bis Z</a></li>
-          <li><a href="<?php echo base_url().'home/blog_info'?>">Gutschein-Infoblog</a></li>
+          <li><a href="<?php echo base_url().'kategorien/'; ?>">Kategorien von A bis Z</a></li>
+          <li><a href="<?php echo base_url().'blogs'?>">Gutschein-Infoblog</a></li>
         </ul>
       </div>
 
@@ -46,16 +46,16 @@
         <h5 style="color:white">Allgemeines</h5>
         <ul>
           <li><a href="<?php echo base_url().'ueber-uns'?>">Über uns</a></li>
-          <li><a href="<?php echo base_url().'home/faqs/users'?>">FAQ</a></li>
+          <li><a href="<?php echo base_url().'faq'?>">FAQ</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-12 footer-links">
         <h5 style="color:white">Bedienung</h5>
         <ul>
-          <li><a href="<?php echo base_url().'home/contact_us'?>">Kontakt und Feedback</a></li>
-          <li><a href="<?php echo base_url().'home/privacy_policy'?>">Datenschutz-Bestimmungen</a></li>
-          <li><a href="<?php echo base_url().'home/imprints'?>">Impressum</a></li>
+          <li><a href="<?php echo base_url().'kontakt'?>">Kontakt und Feedback</a></li>
+          <li><a href="<?php echo base_url().'datenschutz'?>">Datenschutz-Bestimmungen</a></li>
+          <li><a href="<?php echo base_url().'Impressum'?>">Impressum</a></li>
         </ul>
       </div>
     </div>

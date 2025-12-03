@@ -47,14 +47,14 @@
                         </a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url().'home/categories/'; ?>" title="Kategorien von A bis Z">
+                        <a href="<?php echo base_url().'kategorien/'; ?>" title="Kategorien von A bis Z">
                         <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Kategorien von A bis Z</font>
                         </font>
                         </a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url().'home/blog_info'?>" title="Gutschein-Infoblog">
+                        <a href="<?php echo base_url().'blogs'?>" title="Gutschein-Infoblog">
                            <font style="vertical-align: inherit;">
                               <font style="vertical-align: inherit;">Gutschein-Infoblog</font>
                            </font>
@@ -78,7 +78,7 @@
                         </a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url().'home/faqs/users'; ?>" title="FAQ">
+                        <a href="<?php echo base_url().'faq'; ?>" title="FAQ">
                         <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">FAQ</font>
                         </font>
@@ -102,21 +102,21 @@
                   </div>
                   <ul>
                      <li>
-                        <a href="<?php echo base_url().'home/contact_us'; ?>" title="Kontakt und Feedback">
+                        <a href="<?php echo base_url().'kontakt'; ?>" title="Kontakt und Feedback">
                         <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Kontakt und Feedback</font>
                         </font>
                         </a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url().'home/privacy_policy'; ?>" title="Datenschutz-Bestimmungen">
+                        <a href="<?php echo base_url().'datenschutz'; ?>" title="Datenschutz-Bestimmungen">
                         <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Datenschutz-Bestimmungen</font>
                         </font>
                         </a>
                      </li>
                      <li>
-                        <a href="<?php echo base_url().'home/imprints'; ?>" title="Impressum">
+                        <a href="<?php echo base_url().'Impressum'; ?>" title="Impressum">
                         <font style="vertical-align: inherit;">
                         <font style="vertical-align: inherit;">Impressum</font>
                         </font>

@@ -133,7 +133,7 @@ $manual_brands[] = ['image' => 'https://versandkostenfrei.promo/uploads/brands/1
 
             <!-- Kategorien Menu -->
             <li class="nav-item dropdown">
-              <a href="https://versandkostenfrei.promo/home/categories/"
+              <a href="https://versandkostenfrei.promo/kategorien/"
                  class="nav-link dropdown-toggle text-dark fw-semibold"
                  data-bs-toggle="dropdown">
                 Kategorien
@@ -154,7 +154,7 @@ $manual_brands[] = ['image' => 'https://versandkostenfrei.promo/uploads/brands/1
                   $font_icon = $cat['font_icon'] ?? '';
                 ?>
                 <li>
-                  <a href="<?php echo base_url().'home/categories/'.$cat_id; ?>"
+                  <a href="<?php echo base_url().'kategorien/'.$cat_id; ?>"
                      class="dropdown-item d-flex align-items-center py-2"
                      style="font-size:14px; color:#333; display:flex; gap:8px;"
                      onmouseover="this.style.color='#5c8374';"
@@ -177,7 +177,7 @@ $manual_brands[] = ['image' => 'https://versandkostenfrei.promo/uploads/brands/1
                 <li><hr class="dropdown-divider"></li>
 
                 <li>
-                  <a href="<?php echo base_url().'home/categories'; ?>"
+                  <a href="<?php echo base_url().'kategorien'; ?>"
                      class="dropdown-item fw-semibold text-center"
                      style="color:#5c8374; font-size:14px;">
                     Alle Kategorien anzeigen →
@@ -188,7 +188,7 @@ $manual_brands[] = ['image' => 'https://versandkostenfrei.promo/uploads/brands/1
 
             <!-- Blog -->
             <li class="nav-item dropdown ms-auto">
-              <a href="https://versandkostenfrei.promo/home/blog_info"
+              <a href="https://versandkostenfrei.promo/blogs"
                  class="nav-link text-dark fw-semibold">
                 Blogs
               </a>
@@ -265,7 +265,7 @@ $manual_brands[] = ['image' => 'https://versandkostenfrei.promo/uploads/brands/1
         $category_name = $fetch_data['name'];
       ?>
 
-      <a href="<?php echo base_url().'home/categories/'.$category_id ?>"
+      <a href="<?php echo base_url().'kategorien/'.$category_id ?>"
          class="d-inline-block px-3 py-2 rounded"
          style="background-color:#f8f9fa; border:1px solid #eee;">
          <?php echo $category_name; ?>
@@ -275,7 +275,7 @@ $manual_brands[] = ['image' => 'https://versandkostenfrei.promo/uploads/brands/1
     </div>
 
     <div class="text-center mt-3">
-      <a href="<?php echo base_url().'home/categories'; ?>"
+      <a href="<?php echo base_url().'kategorien'; ?>"
          class="fw-semibold" style="color:#5c8374;">
         Alle Kategorien anzeigen →
       </a>

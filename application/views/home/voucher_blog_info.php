@@ -249,7 +249,7 @@
             <?php if(!empty($blog_details)):
                 foreach($blog_details as $key => $details):
                     if($key < 12):
-                        $link = base_url('home/blog_details/'.$details['voucherr_blogs_id']); ?>
+                        $link = base_url('blog/'.$details['voucherr_blogs_id']); ?>
                         <article class="blog_box" onclick="window.location.href='<?php echo $link; ?>'" style="cursor:pointer;">
                             <div class="img_div">
                                 <img class="img_blog" src="<?php echo base_url().$image_url.$details['blog_image']; ?>" alt="<?php echo htmlspecialchars($details['heading']); ?>">
@@ -279,7 +279,7 @@
             <?php if(!empty($blog_details)):
                 foreach($blog_details as $key => $details):
                     if($key >= 12):
-                        $link = base_url('home/blog_details/'.$details['voucherr_blogs_id']); ?>
+                        $link = base_url('blog/'.$details['voucherr_blogs_id']); ?>
                         <article class="blog_box" onclick="window.location.href='<?php echo $link; ?>'">
                             <div class="img_div">
                                 <img class="img_blog" src="<?php echo base_url().$image_url.$details['blog_image']; ?>" alt="<?php echo htmlspecialchars($details['heading']); ?>">

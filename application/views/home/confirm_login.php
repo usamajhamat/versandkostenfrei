@@ -41,7 +41,7 @@
         <h5 style="margin: 20px;font-size: 20px; color: #494f50">Imprints</h5>
         <p class="f-s" style=" font-size: 12px;">Copyright &#169; <?php echo date('Y');?> <a href="<?php echo base_url();?>"><?php echo $system_name; ?></a> - All rights reserved.  
         <p class="f-s" style="font-size: 12px;">E-Mail : <a href="mailto:<?php echo $customer_support_email; ?>"> <?php echo $customer_support_email; ?> </a></p>
-            <br><a href="<?php echo base_url()."home?unsub=".$subscribr_id?>" class="c" style="color:#31322f;">Unsubscibe</a> | <a href="<?php echo base_url()?>home/privacy_policy" class="c" style="color:  #31322f;">data protection</a>
+            <br><a href="<?php echo base_url()."home?unsub=".$subscribr_id?>" class="c" style="color:#31322f;">Unsubscibe</a> | <a href="<?php echo base_url()?>datenschutz" class="c" style="color:  #31322f;">data protection</a>
         </p>
     </div>
 

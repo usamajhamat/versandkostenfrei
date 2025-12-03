@@ -171,7 +171,7 @@
 
                 <!-- Form Body -->
                 <div class="form-body">
-                    <form name="contact" id="contact_us" class="cs-contact-form" action="<?php echo base_url()?>home/contact_us/send" method="POST">
+                    <form name="contact" id="contact_us" class="cs-contact-form" action="<?php echo base_url()?>kontakt/send" method="POST">
                         <input name="ic" value="2329" type="hidden">
 
                         <input id="js-contact-name" name="name" type="text" placeholder="Dein Name" class="input_contact" required>

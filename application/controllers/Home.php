@@ -3415,7 +3415,7 @@ class Home extends CI_Controller {
 			}else{
 				$this->session->set_flashdata('msg_error', 'Oops!something went wrong');
 			}
-			redirect('home/contact_us', 'refresh');
+			redirect('kontakt', 'refresh');
         }
 		$get_page_type_id = $this->db->get_where('page_types', array('page_name'=>'Home'))->row()->page_types_id;
 		$top_right_newsletter = $this->db->get_where('static_content', array('type'=>'other_footer_pages_newsletter', 'page_types_id'=>$get_page_type_id))->row_array();

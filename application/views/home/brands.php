@@ -119,7 +119,7 @@ $sign = "";
                                                   <div class="cs-infobox-text" style="width:100%; text-align:center;">
                                                     <p style="font-size:15px; color:#555; line-height:1.5; max-width:700px; margin:auto;">
                                                       <font style="vertical-align: inherit;">
-                                                        Holen Sie sich aus dieser Liste aller Geschäfte von A–Z die neuesten Gutscheine für Ihre Lieblingsgeschäfte oder die beliebten Geschäfte.
+                                                        Holen Sie sich aus dieser Liste aller Geschäfte von A–Z die neuesten Gutscheine fr Ihre Lieblingsgeschäfte oder die beliebten Geschäfte.
                                                       </font>
                                                     </p>
                                                   </div>
@@ -516,7 +516,7 @@ $sign = "";
     <!-- Brand Info -->
     <div class="alert_box col-sm-12" style="margin:0; background:#fafafa; border-radius:8px; padding:10px 12px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
       <h2 class="box_heading alert_box_head" style="font-size:17px; font-weight:600; color:#333; margin-bottom:6px; line-height:1.4;">
-        <?php echo $brand_name ?> <?php echo $title ?> im <?php echo strftime("%B")." ".strftime("%Y")?>
+        <?php $brand_name2 = $brand_name; echo $brand_name ?> <?php echo $title ?> im <?php echo strftime("%B")." ".strftime("%Y")?>
       </h2>
     </div>
 
@@ -543,7 +543,7 @@ $sign = "";
     ?>
     <div style="border-top:1px solid #eee; padding-top:10px;">
       <h4 style="font-size:15px; font-weight:600; color:#333; margin-bottom:6px;">
-        Über <?php echo $brand_name; ?>
+        ber <?php echo $brand_name; ?>
       </h4>
       <p style="font-size:13px; color:#555; line-height:1.5; margin-bottom:10px;">
         <?php echo $brand_desc; ?>
@@ -693,7 +693,7 @@ $sign = "";
                                                                                   ?>
                                                                                   <span class="">
                                                                                           <font style="vertical-align: inherit;">
-                                                                                                  <font style="vertical-align: inherit;"><?php $brand_name2 = $brand_name; echo $brand_name ?> im <?php echo strftime("%B")." ".strftime("%Y")?></font>
+                                                                                                  <font style="vertical-align: inherit;"><?php  echo $brand_name2 ?> im <?php echo strftime("%B")." ".strftime("%Y")?></font>
                                                                                           </font>
                                                                                   </span>
 
@@ -1036,7 +1036,7 @@ $sign = "";
     </h3>
 
     <div style="font-size:0.85rem; color:#555; margin-bottom:6px; line-height:1.3;">
-      Wenn neue <?php echo $brand_name2;?> Aktionen zu uns kommen, kommen sie in unregelmäßigen Abständen direkt zu Ihnen!
+      Wenn neue <?php echo $brand_name2;?> Aktionen zu uns kommen, kommen sie in unregelmäßigen Abstnden direkt zu Ihnen!
     </div>
 
     <div id="js-couponalert-input" class="controls controls-row">
@@ -1088,7 +1088,7 @@ $sign = "";
           <small id="box_error" style="color:blue;"></small>
           <label style="font-size:0.8rem; line-height:1.3; color:#333; margin:0;">
             <input type="checkbox" id="privacy1" name="privacy" value="0" style="vertical-align:middle; margin-right:4px;">
-            Ja, <a href="<?php echo base_url().'home/privacy_policy' ?>" 
+            Ja, <a href="<?php echo base_url().'datenschutz' ?>" 
                    style="color:#6e8c75; text-decoration:none;">ich stimme</a>
             der Datenschutzerklärung und Erklärung zu.
             <span style="display:block; color:#999; font-size:0.75rem; margin-top:2px;">* Pflichtfeld</span>

@@ -152,7 +152,7 @@ $static_upload_url = $this->db->get_where('system_settings',array('type'=>'stati
 				</div>
 				<div class="row cs-home-btn-group">
 					<div class="col-md-4 col-sm-4 col-md-offset-4" style="margin-top:20px;">
-						<a class="cs-home-table-link more_coupon_btn" style="font-size: 10px;" href="<?php echo base_url().'home/coupons/popular' ?>" title="Show more coupons">
+						<a class="cs-home-table-link more_coupon_btn" style="font-size: 10px;" href="<?php echo base_url().'neueste-Rabattcodes' ?>" title="Show more coupons">
 							<font style="vertical-align: inherit;">
 								<font style="vertical-align: inherit;">Anzeigen mehr weitere Beliebte Gutscheine</font>
 							</font>
@@ -241,7 +241,7 @@ $static_upload_url = $this->db->get_where('system_settings',array('type'=>'stati
 										<font style="vertical-align: inherit;">
 											<font style="vertical-align: inherit;">&nbsp;&nbsp;&nbsp;*Ich habe die  </font>
 										</font>
-										<a href="<?php echo base_url().'home/privacy_policy' ?>">
+										<a href="<?php echo base_url().'datenschutz' ?>">
 											<font style="vertical-align: inherit;">
 												<font style="vertical-align: inherit;">Datenschutz-Bestimmungen</font>
 											</font>
@@ -865,28 +865,28 @@ $static_upload_url = $this->db->get_where('system_settings',array('type'=>'stati
 				<section class="cs-all-categories-categories cs-home-mer-box-ul cs-flex cs-flex-mobil display-gri">
 						<div class="col-md-12 col-sm-12">
 							<div class="col-md-3 col-sm-3 container-fluid wid-home">
-								<a href="<?php echo base_url().'home/categories/'.$get_categories[0]['categories_id']; ?>">
+								<a href="<?php echo base_url().'kategorien/'.$get_categories[0]['categories_id']; ?>">
 									<div class="container-fluid cat_1" style="background-color: #f8f8f8; height: 200px; -webkit-box-shadow: inset 0px -90px 98px rgb(255 255 255); box-shadow: inset 0px -90px 98px rgb(255 255 255); border-bottom: 2px solid #5c8374;">
 									<h3 style="margin-top:140px;"><span><?php echo $get_categories[0]['name'] ?></span></h3>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-3 col-sm-3 container-fluid" style="padding-left: 10px; padding-right: 10px;">
-								<a href="<?php echo base_url().'home/categories/'.$get_categories[1]['categories_id']; ?>">
+								<a href="<?php echo base_url().'kategorien/'.$get_categories[1]['categories_id']; ?>">
 									<div class="container-fluid cat_2" style="background-color: #f8f8f8; height: 200px; -webkit-box-shadow: inset 0px -90px 98px rgb(255 255 255); box-shadow: inset 0px -90px 98px rgb(255 255 255); border-bottom: 2px solid #5c8374;">
 									<h3 style="margin-top:140px;"><span><?php echo $get_categories[1]['name'] ?></span></h3>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-3 col-sm-3 container-fluid" style="padding-left: 10px; padding-right: 10px;">
-								<a href="<?php echo base_url().'home/categories/'.$get_categories[2]['categories_id']; ?>">
+								<a href="<?php echo base_url().'kategorien/'.$get_categories[2]['categories_id']; ?>">
 									<div class="container-fluid cat_3" style="background-color: #f8f8f8; height: 200px; -webkit-box-shadow: inset 0px -90px 98px rgb(255 255 255); box-shadow: inset 0px -90px 98px rgb(255 255 255); border-bottom: 2px solid #5c8374;">
 									<h3 style="margin-top:140px;"><span><?php echo $get_categories[2]['name'] ?></span></h3>
 									</div>
 								</a>
 							</div>
 							<div class="col-md-3 col-sm-3 container-fluid" style="padding-left: 10px; padding-right: 10px;">
-								<a href="<?php echo base_url().'home/categories/'.$get_categories[3]['categories_id']; ?>">
+								<a href="<?php echo base_url().'kategorien/'.$get_categories[3]['categories_id']; ?>">
 									<div class="container-fluid cat_4" style="background-color: #f8f8f8; height: 200px; -webkit-box-shadow: inset 0px -90px 98px rgb(255 255 255); box-shadow: inset 0px -90px 98px rgb(255 255 255); border-bottom: 2px solid #5c8374;">
 									<h3 style="margin-top:140px;"><span><?php echo $get_categories[3]['name'] ?></span></h3>
 									</div>
@@ -909,7 +909,7 @@ $static_upload_url = $this->db->get_where('system_settings',array('type'=>'stati
 							if($key>3){
 					?>
 							<div class="cs-coupon-small-list col-md-3 col-sm-3" style="background: transparent; padding: 10px; border: none;" >		
-								<a class="cs-coupon-small-list-outer move_div row" target="_blank" href="<?php echo base_url().'home/categories/'.$cat_id ?>" title="<?php echo $cat_name ?>" style="border-bottom: 2px solid gray; height:45px;">
+								<a class="cs-coupon-small-list-outer move_div row" target="_blank" href="<?php echo base_url().'kategorien/'.$cat_id ?>" title="<?php echo $cat_name ?>" style="border-bottom: 2px solid gray; height:45px;">
 									<!-- img small online -->
 									<div class="cs-coupon-small-list-logo" style="width: 35px;">
 										<img style="filter: invert(0.5);" class="cate_image"  src="<?php echo base_url().$cat_icon_url.$font_icon; ?>" aria-hidden="true">
@@ -932,7 +932,7 @@ $static_upload_url = $this->db->get_where('system_settings',array('type'=>'stati
 
 				<div class="row btn-center" style="text-align: center;">
 					<div class="col-md-4 col-sm-4 col-md-offset-4">
-						<a class="cs-home-table-link cs-home-table-link2 more_coupon_btn" href="<?php echo base_url().'home/categories/' ?>" title="All categories">
+						<a class="cs-home-table-link cs-home-table-link2 more_coupon_btn" href="<?php echo base_url().'kategorien/' ?>" title="All categories">
 							<font style="vertical-align: inherit;font-size:14px;">
 								<font style="vertical-align: inherit;">Alle Kategorien</font>
 							</font>

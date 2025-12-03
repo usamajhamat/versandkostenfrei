@@ -215,7 +215,7 @@
        }
      ?> 
       <url>
-          <loc><?php echo base_url()."home/blog_info"?></loc>
+          <loc><?php echo base_url()."blogs"?></loc>
           <changefreq>daily</changefreq>
           <priority>0.4</priority>
       </url>
@@ -225,23 +225,23 @@
           <priority>0.4</priority>
       </url>
       <url>
-          <loc><?php echo base_url()."home/faqs/users"?></loc>
+          <loc><?php echo base_url()."faq"?></loc>
           <changefreq>daily</changefreq>
           <priority>0.4</priority>
       </url>
      
       <url>
-          <loc><?php echo base_url()."home/contact_us"?></loc>
+          <loc><?php echo base_url()."kontakt"?></loc>
           <changefreq>daily</changefreq>
           <priority>0.4</priority>
       </url>
       <url>
-          <loc><?php echo base_url()."home/privacy_policy"?></loc>
+          <loc><?php echo base_url()."datenschutz"?></loc>
           <changefreq>daily</changefreq>
           <priority>0.4</priority>
       </url>
       <url>
-          <loc><?php echo base_url()."home/imprints"?></loc>
+          <loc><?php echo base_url()."Impressum"?></loc>
           <changefreq>daily</changefreq>
           <priority>0.4</priority>
       </url>
