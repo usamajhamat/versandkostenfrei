@@ -244,12 +244,21 @@
     <!-- BLOG LISTING -->
     <section class="blocks_main">
         <h2 class="main_blog_heading">Neueste Blogbeiträge</h2>
-
+<?php
+function make_slug($string) {
+    $slug = strtolower(trim($string));
+    $slug = str_replace(['ä','ö','ü','ß'], ['ae','oe','ue','ss'], $slug);
+    $slug = preg_replace('/[^a-z0-9]+/', '-', $slug);
+    return trim($slug, '-');
+}
+?>
         <div class="blogs_grid">
             <?php if(!empty($blog_details)):
                 foreach($blog_details as $key => $details):
                     if($key < 12):
-                        $link = base_url('blog/'.$details['voucherr_blogs_id']); ?>
+                        $slug = make_slug($details['heading']);
+                        $link = base_url('blog/' . $slug);
+                        $link = base_url('blog/'.$slug.$details['voucherr_blogs_id']); ?>
                         <article class="blog_box" onclick="window.location.href='<?php echo $link; ?>'" style="cursor:pointer;">
                             <div class="img_div">
                                 <img class="img_blog" src="<?php echo base_url().$image_url.$details['blog_image']; ?>" alt="<?php echo htmlspecialchars($details['heading']); ?>">
@@ -279,7 +288,8 @@
             <?php if(!empty($blog_details)):
                 foreach($blog_details as $key => $details):
                     if($key >= 12):
-                        $link = base_url('blog/'.$details['voucherr_blogs_id']); ?>
+                        $slug = make_slug($details['heading']);
+                        $link = base_url('blog/'.$slug); ?>
                         <article class="blog_box" onclick="window.location.href='<?php echo $link; ?>'">
                             <div class="img_div">
                                 <img class="img_blog" src="<?php echo base_url().$image_url.$details['blog_image']; ?>" alt="<?php echo htmlspecialchars($details['heading']); ?>">

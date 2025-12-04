@@ -30,6 +30,14 @@ $route['faq']                = 'home/faqs/users';        // New: /faq        -> 
 $route['neueste-Rabattcodes']= 'home/coupons/popular';   // New: /neueste-Rabattcodes -> Old: home/coupons/popular
 
 // --- END NEW ROUTES ---
+$route['kategorien'] = 'home/categories';            // /kategorien
+$route['kategorien/(:num)'] = 'home/categories/$1'; // /kategorien/29, /kategorien/123, etc.
+$route['kategorien/(:num)/(:any)'] = 'home/categories/$1/$2'; // optional extra slug/parameter
+
+// German-friendly /blog URL mapping
+$route['blog'] = 'home/blog_details';   
+$route['blog'] = 'home/blog_info';          // /blog
+$route['blog/(:any)'] = 'home/blog_details/$1';
 
 
 $route['marken'] = 'home/brands';

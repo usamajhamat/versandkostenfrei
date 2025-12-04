@@ -543,7 +543,7 @@ $sign = "";
     ?>
     <div style="border-top:1px solid #eee; padding-top:10px;">
       <h4 style="font-size:15px; font-weight:600; color:#333; margin-bottom:6px;">
-        ber <?php echo $brand_name; ?>
+        Über <?php echo $brand_name; ?>
       </h4>
       <p style="font-size:13px; color:#555; line-height:1.5; margin-bottom:10px;">
         <?php echo $brand_desc; ?>
@@ -877,7 +877,7 @@ $sign = "";
 
                                                                                           ?> 
                                                                                           <div class="col-sm-12" style="margin-bottom: 30px; <?php echo ($_x++ % 2 == 0)?'padding-right: 10px':'padding-left: 10px'; ?>">  
-                                                                                          <div class="coupon_box_div coupon_click_brands" data-url = "<?php echo base_url().'marken/'.$brand_name_new."?coupon_id=".$coupons_id;?>" data-page="brands" data-coupon = "<?php echo $fetch_data['coupon_type'];?>" data-tag="<?php echo $fetch_data['short_tagline'];?>" data-type="<?php echo $fetch_data['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$fetch_data['coupons_id'];?>" style="position: relative; margin-top: 20px;">
+                                                                                          <div class="coupon_box_div coupon_click_brands" data-url = "<?php echo base_url().'marken/'.$brand_name2."?coupon_id=".$coupons_id;?>" data-page="brands" data-coupon = "<?php echo $fetch_data['coupon_type'];?>" data-tag="<?php echo $fetch_data['short_tagline'];?>" data-type="<?php echo $fetch_data['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$fetch_data['coupons_id'];?>" style="position: relative; margin-top: 20px;">
                                                                                           <div class="discount_div">
                                                                                                   <span>
                                                                                                   <?php
@@ -918,7 +918,7 @@ $sign = "";
                                                                                                                   <div class=" full_btn_div" style="">
                                                                                                                           <div  class="coupon-btn-text">
                                                                                                                                   <i class="fa fa-euro"></i>
-                                                                                                                                  <span>Gutschein anzeigen</span>
+                                                                                                                                  <span>Gutschein anzeigen111</span>
 
                                                                                                                           </div>
                                                                                                                   </div> 
@@ -931,7 +931,7 @@ $sign = "";
 
                                                                                                                           <span class="show_code_cover">
                                                                                                                           <i class="fa fa-euro"></i>
-                                                                                                                                  Gutschein anzeigen
+                                                                                                                                  Gutschein anzeigen222
                                                                                                                           </span>
                                                                                                                           <span class="back_code"> <?php echo substr($coupon_code,1); ?> </span>
                                                                                                                   </span>
@@ -1114,7 +1114,7 @@ $sign = "";
        data-coupon="<?php echo $coupons['coupon_type'];?>"
        data-tag="<?php echo $coupons['short_tagline'];?>"
        data-type="<?php echo $coupons['categories_id'];?>"
-       id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+       id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
 
     <?php if($coupons['discount_type']=="Custom"){ ?>
       <div class="cs-coupon-logo cs-flex cs-flex-mobil_my">  
@@ -1178,11 +1178,11 @@ $sign = "";
                      data-coupon="<?php echo $coupons['coupon_type'];?>"
                      data-tag="<?php echo $coupons['short_tagline'];?>"
                      data-type="<?php echo $coupons['categories_id'];?>"
-                     id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                     id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                   <div class="cs-coupon-btn_my" title="Visit the homepage" style="display:flex; align-items:center; justify-content:center;cursor:pointer;width:300px;height:36px !important;">
                     <div class="coupon-btn-text">
                       <i class="fa fa-euro"></i>
-                      <span>Gutschein anzeigen</span>
+                      <span>Gutschein anzeigen999</span>
                     </div>
                   </div>
                 </div>
@@ -1193,7 +1193,7 @@ $sign = "";
                           data-tag="<?php echo $coupons['short_tagline'];?>"
                           data-coupon="<?php echo $coupons['coupon_type'];?>"
                           data-type="<?php echo $coupons['categories_id'];?>"
-                          id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                          id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                     <span class="peal_btn_block">
                       <span class="show">
                         <i class="fa fa-euro"></i>
@@ -1208,11 +1208,12 @@ $sign = "";
                        data-coupon="<?php echo $coupons['coupon_type'];?>"
                        data-tag="<?php echo $coupons['short_tagline'];?>"
                        data-type="<?php echo $coupons['categories_id'];?>"
-                       id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                       id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                     <div class="cs-coupon-btn_my" title="Visit the homepage" style="display:flex; align-items:center; justify-content:center;cursor:pointer;width:300px;height:36px !important;">
                       <div class="coupon-btn-text">
                         <i class="fa fa-euro"></i>
                         <span>Gutschein anzeigen</span>
+
                       </div>
                     </div>
                   </div>
@@ -1224,11 +1225,11 @@ $sign = "";
                       data-page="brands"
                       data-tag="<?php echo $coupons['short_tagline'];?>"
                       data-type="<?php echo $coupons['categories_id'];?>"
-                      id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                      id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                 <span class="peal_btn_block">
                   <span style="width:300px" class="<?php echo ($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']) ? 'show' : 'show_code_cover'; ?>">
                     <i class="fa fa-euro"></i>
-                    <span>Gutschein anzeigen</span>
+                    <span>Gutschein anzeigen666</span>
                   </span>
                   <span class="back_code <?php echo $coupons['coupons_id'];?>" style="width:300px"><?php echo $code_text;?></span>
                 </span>
@@ -1266,13 +1267,13 @@ $sign = "";
                 <?php if (!empty($coupons['min_order_price'])): ?>
                   Mindestbestellwert: €<?php echo htmlspecialchars($coupons['min_order_price']); ?>
                 <?php else: ?>
-                  Kein Mindestbestellwert
+                  Kein Mindestbestellwert---
                 <?php endif; ?>
             </div>
               
             <?php
                 if (!empty($coupons['end_date'])) {
-                    $endDateParts = explode('-', $coupons['end_date']); // "YYYY-MM-DD" → [YYYY, MM, DD]
+                    $endDateParts = explode('-', $coupons['end_date']); // "YYYY-MM-DD"  [YYYY, MM, DD]
                     if (count($endDateParts) === 3) {
                         $year  = $endDateParts[0];
                         $month = $endDateParts[1];
@@ -1317,7 +1318,7 @@ $sign = "";
   <?php } ?> 
 
   <?php if(isset($coupons['coupon_image'])){ ?>
-    <div target="_blank" href="<?php echo base_url().'marken/'.$brand_name_new;?>" class="cate_side_brand_img">
+    <div target="_blank" href="<?php echo base_url().'marken/'.$brand_name2;?>" class="cate_side_brand_img">
       <img class="brands_image_cate" src="<?php echo base_url();?>uploads/coupons/<?php echo $coupons['coupon_image']; ?>">
     </div>
   <?php } ?> 																
@@ -1442,14 +1443,14 @@ $sign = "";
                                                                                                         }
 
                                                                                                         if (empty($coupons['coupon_code'])) {
-                                                                                                            $code_text = "Kein Code benötigt!";
+                                                                                                            $code_text = "Kein Code bentigt!";
                                                                                                         } else {
                                                                                                             $code_text = $coupons['coupon_code'];
                                                                                                         }
                                                                                             ?>
                                                                                                           <div class="cs-coupon-box cs-coupon-merchant js-fp" style="<?php if(!empty($coupons['special_text']) && $key!="0"){ echo "margin-top: 30px;"; }  ?>" id="<?php echo $coupons['coupons_id'];?>">
                                                                                                                   <div class="cs-flex cs-flex-mobil_my cs-outer-coupon coupons_padd" style="border-radius:10px; overflow:hidden;">
-                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                           <?php
 
                                                                                                                                   if($coupons['discount_type']=="Custom"){
@@ -1513,7 +1514,7 @@ $sign = "";
 
                                                                                                                                                         ?>
 
-                                                                                                                                                           <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                           <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                         <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                                 <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                         <i class="fa fa-euro"></i>
@@ -1528,7 +1529,7 @@ $sign = "";
                                                                                                                                                                 if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                           ?>
 
-                                                                                                                                                          <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                          <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                 <span class="peal_btn_block">
                                                                                                                                                                         <span class="show">
                                                                                                                                                                                 <i class="fa fa-euro"></i>
@@ -1540,7 +1541,7 @@ $sign = "";
                                                                                                                                                         <?php	} 
                                                                                                                                                         else{
                                                                                                                                                                 ?>
-                                                                                                                                                                   <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                                   <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                         <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                                 <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                         <i class="fa fa-euro"></i>
@@ -1557,7 +1558,7 @@ $sign = "";
                                                                                                                                                         }
                                                                                                                                                         else{
                                                                                                                                                         ?>
-                                                                                                                                                        <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                        <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                 <span class="peal_btn_block">
                                                                                                                                                                         <span class="<?php if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                                                 echo "show";
@@ -1692,7 +1693,7 @@ $sign = "";
                                                                                           ?>
                                                                                                           <div class="cs-coupon-box cs-coupon-merchant js-fp" style="<?php if(!empty($coupons['special_text']) && $key!="0"){ echo "margin-top: 30px;"; }  ?>" id="<?php echo $coupons['coupons_id'];?>">
                                                                                                                   <div class="cs-flex cs-flex-mobil_my cs-outer-coupon coupons_padd" style="border-radius:10px; overflow:hidden;">
-                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                           <?php
 
                                                                                                                                           if($coupons['discount_type']=="Custom"){
@@ -1754,7 +1755,7 @@ $sign = "";
 
                                                                                                                                                   ?>
 
-                                                                                                                                                     <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                     <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                   <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                           <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                   <i class="fa fa-euro"></i>
@@ -1769,7 +1770,7 @@ $sign = "";
                                                                                                                                                           if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                     ?>
 
-                                                                                                                                                    <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                    <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                           <span class="peal_btn_block">
                                                                                                                                                                   <span class="show">
                                                                                                                                                                           <i class="fa fa-euro"></i>
@@ -1781,7 +1782,7 @@ $sign = "";
                                                                                                                                                   <?php	} 
                                                                                                                                                   else{
                                                                                                                                                           ?>
-                                                                                                                                                             <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                             <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                   <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                           <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                   <i class="fa fa-euro"></i>
@@ -1798,7 +1799,7 @@ $sign = "";
                                                                                                                                                   }
                                                                                                                                                   else{
                                                                                                                                                   ?>
-                                                                                                                                                  <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                  <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                           <span class="peal_btn_block">
                                                                                                                                                                   <span class="<?php if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                                           echo "show";
@@ -1939,7 +1940,7 @@ $sign = "";
                                                                                           ?>
                                                                                                           <div class="cs-coupon-box cs-coupon-merchant js-fp" style="<?php if(!empty($coupons['special_text']) && $key!="0"){ echo "margin-top: 30px;"; }  ?>" id="<?php echo $coupons['coupons_id'];?>">
                                                                                                                   <div class="cs-flex cs-flex-mobil_my cs-outer-coupon coupons_padd" style="border-radius:10px; overflow:hidden;">
-                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                           <?php
 
                                                                                                                                   if($coupons['discount_type']=="Custom"){
@@ -2001,7 +2002,7 @@ $sign = "";
 
                                                                                                                                                   ?>
 
-                                                                                                                                                     <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                     <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                   <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                           <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                   <i class="fa fa-euro"></i>
@@ -2016,7 +2017,7 @@ $sign = "";
                                                                                                                                                           if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                     ?>
 
-                                                                                                                                                    <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                    <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                           <span class="peal_btn_block">
                                                                                                                                                                   <span class="show">
                                                                                                                                                                           <i class="fa fa-euro"></i>
@@ -2028,7 +2029,7 @@ $sign = "";
                                                                                                                                                   <?php	} 
                                                                                                                                                   else{
                                                                                                                                                           ?>
-                                                                                                                                                             <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                             <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                   <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                           <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                   <i class="fa fa-euro"></i>
@@ -2045,7 +2046,7 @@ $sign = "";
                                                                                                                                                   }
                                                                                                                                                   else{
                                                                                                                                                   ?>
-                                                                                                                                                  <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                  <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                           <span class="peal_btn_block">
                                                                                                                                                                   <span class="<?php if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                                           echo "show";
@@ -2186,7 +2187,7 @@ $sign = "";
                                                                                                           <div class="cs-coupon-box cs-coupon-merchant js-fp" style="<?php if(!empty($coupons['special_text']) && $key!="0"){ echo "margin-top: 30px;"; }  ?>" id="<?php echo $coupons['coupons_id'];?>">
                                                                                                                   <div class="cs-flex cs-flex-mobil_my cs-outer-coupon coupons_padd" style="border-radius:10px; overflow:hidden;">
 
-                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                          <div class="cs-coupon-box-cell-1 coupon_click cs-flex cs-flex-mobil_my" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
 
                                                                                                                           <?php
 
@@ -2249,7 +2250,7 @@ $sign = "";
 
                                                                                                                                                   ?>
 
-                                                                                                                                                     <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                     <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                   <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                           <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                   <i class="fa fa-euro"></i>
@@ -2264,7 +2265,7 @@ $sign = "";
                                                                                                                                                           if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                     ?>
 
-                                                                                                                                                    <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                    <button class="new_peal_btn coupon_click" data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                           <span class="peal_btn_block">
                                                                                                                                                                   <span class="show">
                                                                                                                                                                           <i class="fa fa-euro"></i>
@@ -2276,7 +2277,7 @@ $sign = "";
                                                                                                                                                   <?php	} 
                                                                                                                                                   else{
                                                                                                                                                           ?>
-                                                                                                                                                             <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                             <div class="cs-modal-cta-wrapper coupon_click" data-page="brands" data-coupon = "<?php echo $coupons['coupon_type'];?>" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                                   <div class="cs-coupon-btn_my " title="Visit the  homepage" style="cursor: pointer;">
                                                                                                                                                                           <div  class="coupon-btn-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
                                                                                                                                                                                   <i class="fa fa-euro"></i>
@@ -2293,7 +2294,7 @@ $sign = "";
                                                                                                                                                   }
                                                                                                                                                   else{
                                                                                                                                                   ?>
-                                                                                                                                                  <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name_new.'_'.$coupons['coupons_id'];?>">
+                                                                                                                                                  <button class="new_peal_btn coupon_click" data-coupon = "<?php echo $coupons['coupon_type'];?>"  data-page="brands" data-tag="<?php echo $coupons['short_tagline'];?>" data-type="<?php echo $coupons['categories_id'];?>" id="<?php echo $brand_name2.'_'.$coupons['coupons_id'];?>">
                                                                                                                                                           <span class="peal_btn_block">
                                                                                                                                                                   <span class="<?php if($remove_phill=="Yes" && $open_coupon_id==$coupons['coupons_id']){
                                                                                                                                                                           echo "show";
@@ -2333,7 +2334,7 @@ $sign = "";
                                                   } else { ?>
                                                                                                   <div class="cs-coupon-box cs-coupon-category " style="display: flex;justify-content: center;font-size: 14px;">					  
                                                                                                      <div class="cs-coupon-more-details">
-                                                                                                     Keine Gutscheine verfügbar	
+                                                                                                     Keine Gutscheine verfgbar	
                                                                                                      </div>
                                                                                                   </div>
                                                                                           <?php } 
